@@ -94,3 +94,31 @@ SET supplier = 'CP Express'
 WHERE ID = 7;
 
 SELECT * FROM tblDataBlitz;
+
+DELETE FROM tblDataBlitz WHERE ID IN (2, 4);
+
+UPDATE tblDataBlitz
+SET brandName='CMF',productName='Phone 2',supplier='Abenson'
+WHERE ID = 1;
+
+UPDATE tblDataBlitz
+SET supplier='CP Express'
+WHERE ID = 5;
+
+UPDATE tblDataBlitz
+SET brandName='Redmi', productName='Note 15',supplier='Star Apple'
+WHERE ID = 6;
+
+UPDATE tblDataBlitz
+SET brandName='CMF', supplier='MemoXpress'
+WHERE ID = 7;
+
+UPDATE tblDataBlitz
+SET brandName='CMF', productName='Iphone 16', supplier='Abenson'
+WHERE ID = 8;
+
+SELECT * FROM tblDataBlitz;
+
+
+Sent
+Write to
