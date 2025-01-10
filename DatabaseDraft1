@@ -1,0 +1,53 @@
+CREATE DATABASE dbDataBlitz;
+
+USE dbDataBlitz;
+
+CREATE TABLE tblDataBlitz (
+	Id INT INCREMENT,
+    productID INT,
+    brandName VARCHAR(20),
+    productName VARCHAR(20),
+    serialNo VARCHAR(20),
+    supplier VARCHAR(20)
+);
+
+DROP TABLE tblDataBlitz;
+
+CREATE TABLE tblDataBlitz (
+	ID INT AUTO_INCREMENT PRIMARY KEY,
+    productID INT AUTO_INCREMENT PRIMARY KEY,
+    brandName VARCHAR(20),
+    productName VARCHAR(20),
+    serialNo VARCHAR(20),
+    supplier VARCHAR(20)
+);
+
+DROP TABLE tblDataBlitz;
+
+CREATE TABLE tblDataBlitz (
+	ID INT AUTO_INCREMENT PRIMARY KEY,
+    productID INT,
+    brandName VARCHAR(20),
+    productName VARCHAR(20),
+    serialNo VARCHAR(20),
+    supplier VARCHAR(20)
+);
+
+INSERT INTO tblDataBlitz(productID,brandName,productName,serialNo,supplier) VALUES
+(1001, 'Nothing', 'Phone 2', '890002761238591', 'Star Apple'),
+(1002, 'Samsung', 'S24 Ultra', '01111889352', 'MemoXpress'),
+(1003, 'Apple', '16 Pro', '980971235617', 'Star Apple'),
+(1004, 'Samsung', 'S22 Plus', '0091261234217', 'CP Express'),
+(1005, 'Xiaomi', '14T', '768901627341888', 'CP Express'),
+(1006, 'Xiaomi', 'Redmi Note 15', '100000234124', 'Star Apple'),
+(1007, 'Nothing', 'Phone 2a Plus', '90003123', 'MemoXpress'),
+(1008, 'Apple', 'iPhone 16', '111000312314', 'Star Apple'); 
+
+SELECT*FROM tblDataBlitz;
+
+SELECT * FROM tblDataBlitz
+WHERE ID IN (2, 4, 5, 7);
+
+SELECT ID, productName, serialNo, supplier
+FROM tblDataBlitz
+WHERE ID IN (2, 3, 4, 8);
